@@ -1,0 +1,183 @@
+{
+  "veri": {
+    "train_satir": 103904,
+    "test_satir": 25976,
+    "toplam": 129880,
+    "ozellik_sayisi": 22,
+    "tekrar_eden_satir": 0,
+    "eksik_arrival_delay": 393,
+    "memnun_orani": 0.4345,
+    "dep_arr_korelasyon": 0.9653
+  },
+  "en_iyi_parametreler": {
+    "Decision Tree": {
+      "min_samples_split": 50,
+      "min_samples_leaf": 5,
+      "max_depth": 20,
+      "criterion": "entropy"
+    },
+    "Random Forest": {
+      "n_estimators": 300,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "max_features": 0.5,
+      "max_depth": 20
+    }
+  },
+  "test": [
+    {
+      "model": "Baseline (çoğunluk)",
+      "accuracy": 0.561,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.9543,
+      "precision": 0.9548,
+      "recall": 0.9404,
+      "f1": 0.9475,
+      "roc_auc": 0.9882
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9647,
+      "precision": 0.9749,
+      "recall": 0.944,
+      "f1": 0.9592,
+      "roc_auc": 0.9948
+    }
+  ],
+  "shap_ilk5": [
+    "İş seyahati",
+    "Online boarding",
+    "Uçak içi Wi-Fi",
+    "Kabin sınıfı",
+    "Sadık müşteri"
+  ],
+  "skytrax": {
+    "bilgi": {
+      "ham_yorum": 41396,
+      "temiz_yorum": 31074,
+      "havayolu_sayisi": 294,
+      "tarih_araligi": "2011-10 / 2015-08",
+      "thy_yorum": 495,
+      "tavsiye_orani": 0.5433,
+      "overall_recommended_korelasyon": 0.8674,
+      "eksik_oranlari": {
+        "seat_comfort_rating": 0.186,
+        "cabin_staff_rating": 0.186,
+        "food_beverages_rating": 0.196,
+        "inflight_entertainment_rating": 0.248,
+        "value_money_rating": 0.04,
+        "ground_service_rating": 0.947,
+        "wifi_connectivity_rating": 0.986
+      }
+    },
+    "parametreler": {
+      "Decision Tree": {
+        "max_depth": 8,
+        "min_samples_leaf": 10
+      },
+      "Random Forest": {
+        "max_depth": null,
+        "min_samples_leaf": 10
+      }
+    },
+    "sonuclar": [
+      {
+        "model": "Decision Tree",
+        "accuracy": 0.9271,
+        "precision": 0.9386,
+        "recall": 0.9261,
+        "f1": 0.9323,
+        "roc_auc": 0.979,
+        "veri": "diğer havayolları (test)"
+      },
+      {
+        "model": "Decision Tree",
+        "accuracy": 0.9172,
+        "precision": 0.932,
+        "recall": 0.9288,
+        "f1": 0.9304,
+        "roc_auc": 0.9688,
+        "veri": "Turkish Airlines (dış örneklem)"
+      },
+      {
+        "model": "Random Forest",
+        "accuracy": 0.9285,
+        "precision": 0.939,
+        "recall": 0.9285,
+        "f1": 0.9338,
+        "roc_auc": 0.9812,
+        "veri": "diğer havayolları (test)"
+      },
+      {
+        "model": "Random Forest",
+        "accuracy": 0.9192,
+        "precision": 0.9264,
+        "recall": 0.939,
+        "f1": 0.9327,
+        "roc_auc": 0.9742,
+        "veri": "Turkish Airlines (dış örneklem)"
+      }
+    ]
+  },
+  "ek_analizler": {
+    "memnun_degil_tahmini": 14935,
+    "senaryo_ilk5": [
+      {
+        "hizmet": "Uçak içi Wi-Fi",
+        "memnuna_donen": 2824,
+        "donusum_%": 18.91
+      },
+      {
+        "hizmet": "Online boarding",
+        "memnuna_donen": 1257,
+        "donusum_%": 8.42
+      },
+      {
+        "hizmet": "Check-in hizmeti",
+        "memnuna_donen": 940,
+        "donusum_%": 6.29
+      },
+      {
+        "hizmet": "Bagaj hizmeti",
+        "memnuna_donen": 847,
+        "donusum_%": 5.67
+      },
+      {
+        "hizmet": "Uçak içi servis",
+        "memnuna_donen": 808,
+        "donusum_%": 5.41
+      }
+    ],
+    "hata_analizi": {
+      "test_yolcu": 25976,
+      "hatali_tahmin": 916,
+      "hata_orani_%": 3.53,
+      "yanlis_pozitif": 277,
+      "yanlis_negatif": 639,
+      "hatalarin_sinirda_%": 39.08,
+      "dogrularin_sinirda_%": 2.4
+    },
+    "mcnemar": {
+      "model_a": "Random Forest",
+      "model_b": "Decision Tree",
+      "a_dogru_b_yanlis": 448,
+      "a_yanlis_b_dogru": 176,
+      "istatistik": 117.694,
+      "p_degeri": 2.0232074930474283e-27,
+      "yontem": "chi-square (continuity corrected)",
+      "dogruluk_farki": 0.0105,
+      "fark_%95_GA": [
+        0.0086,
+        0.0123
+      ],
+      "anlamli_mi_(p<0.05)": true
+    }
+  },
+  "toplam_sure_sn": 566.3
+}

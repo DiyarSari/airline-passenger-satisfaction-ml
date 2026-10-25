@@ -1,0 +1,15 @@
+hizmet,sutun,uygun_yolcu,memnuna_donen,donusum_%,uygunlar_icinde_%,ort_olasilik_artisi
+Uçak içi Wi-Fi,inflight_wifi,14908,2824,18.91,18.94,0.192
+Online boarding,online_boarding,13920,1257,8.42,9.03,0.0905
+Check-in hizmeti,checkin_service,12874,940,6.29,7.3,0.0558
+Bagaj hizmeti,baggage_handling,12399,847,5.67,6.83,0.0568
+Uçak içi servis,inflight_service,12212,808,5.41,6.62,0.055
+Koltuk konforu,seat_comfort,12590,758,5.08,6.02,0.0463
+Temizlik,cleanliness,12756,486,3.25,3.81,0.03
+Kabin hizmeti,onboard_service,12914,314,2.1,2.43,0.0245
+Diz mesafesi,leg_room,12398,113,0.76,0.91,0.0136
+Uçak içi eğlence,inflight_entertainment,12743,92,0.62,0.72,0.0194
+Online rezervasyon kolaylığı,online_booking,13527,64,0.43,0.47,0.0239
+Kapı konumu,gate_location,13326,52,0.35,0.39,0.0017
+Yiyecek-içecek,food_drink,12383,24,0.16,0.19,0.0035
+Kalkış/varış saati uygunluğu,time_convenience,10926,18,0.12,0.16,0.0022

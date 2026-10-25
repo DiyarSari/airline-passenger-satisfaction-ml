@@ -1,0 +1,54 @@
+{
+  "memnun_degil_tahmini": 14935,
+  "senaryo_ilk5": [
+    {
+      "hizmet": "Uçak içi Wi-Fi",
+      "memnuna_donen": 2824,
+      "donusum_%": 18.91
+    },
+    {
+      "hizmet": "Online boarding",
+      "memnuna_donen": 1257,
+      "donusum_%": 8.42
+    },
+    {
+      "hizmet": "Check-in hizmeti",
+      "memnuna_donen": 940,
+      "donusum_%": 6.29
+    },
+    {
+      "hizmet": "Bagaj hizmeti",
+      "memnuna_donen": 847,
+      "donusum_%": 5.67
+    },
+    {
+      "hizmet": "Uçak içi servis",
+      "memnuna_donen": 808,
+      "donusum_%": 5.41
+    }
+  ],
+  "hata_analizi": {
+    "test_yolcu": 25976,
+    "hatali_tahmin": 916,
+    "hata_orani_%": 3.53,
+    "yanlis_pozitif": 277,
+    "yanlis_negatif": 639,
+    "hatalarin_sinirda_%": 39.08,
+    "dogrularin_sinirda_%": 2.4
+  },
+  "mcnemar": {
+    "model_a": "Random Forest",
+    "model_b": "Decision Tree",
+    "a_dogru_b_yanlis": 448,
+    "a_yanlis_b_dogru": 176,
+    "istatistik": 117.694,
+    "p_degeri": 2.0232074930474283e-27,
+    "yontem": "chi-square (continuity corrected)",
+    "dogruluk_farki": 0.0105,
+    "fark_%95_GA": [
+      0.0086,
+      0.0123
+    ],
+    "anlamli_mi_(p<0.05)": true
+  }
+}
