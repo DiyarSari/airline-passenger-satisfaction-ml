@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Veri dosyaları lisans ve boyut nedeniyle repoya konmaz (bkz. data/README.md)
+data/raw/*.csv
+data/external/*.csv
+
+# Eğitilmiş modeller (python main.py ile yeniden üretilir)
+outputs/models/*.joblib
+
+# Teslim dosyaları (rapor, sunum)
+teslim/

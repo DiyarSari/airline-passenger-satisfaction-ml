@@ -1,0 +1,21 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# matplotlib.use("Agg") diğer importlardan önce çağrılmalı
+"main.py" = ["E402"]
+"extra_analysis.py" = ["E402"]
+# testler src paketini sys.path üzerinden bulur
+"tests/*" = ["E402"]
+# defterlerde src paketi sys.path ayarından sonra içe aktarılır
+"notebooks/*" = ["E402"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src", "extra_analysis"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
