@@ -1,6 +1,6 @@
 # Havayolu Yolcu Memnuniyeti Tahmini
 
-**Diyar Sarı** · Yazılım Mühendisliği · 2309111133
+**Diyar Sarı** · Yazılım Mühendisliği 
 Makine Öğrenmesi – Vize Projesi (U08) · İstinye Üniversitesi · Doç. Dr. Samet Gürsev
 
 ## Özet
