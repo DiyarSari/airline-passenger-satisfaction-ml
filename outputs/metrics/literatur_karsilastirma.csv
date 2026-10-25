@@ -1,8 +1,8 @@
 study,methods,best,accuracy
 "Javadi, Ergin & Yüksel (2026), J. Turkish Operations Management","LR, DT, RF, SVM, KNN",RF,0.9461
 "Fadri vd. (2025), IJATIS","KNN, NB, DT, RF, SVM",RF,0.9578
-"Zhang (2024), EMITI - SciTePress","LR, RF, AdaBoost, XGBoost + SHAP",XGBoost,0.951
+"Zhang (2024), EMITI - SciTePress","LR, RF, AdaBoost, NB, XGBoost + SHAP",XGBoost,0.9514
 "Xue (2025), IAMPA - SciTePress","PCA + LR, RF",RF,0.92
-"Hong vd., DAAM (UMP)","KNN, DT, LR, RF, NB, AdaBoost",RF,0.892
+"Hong vd. (2023), DAAM (UMP)","KNN, DT, LR, RF, NB, AdaBoost",RF,0.892
 Bu çalışma - Decision Tree,"DT, RF + SHAP",Decision Tree,0.9543
 Bu çalışma - Random Forest,"DT, RF + SHAP",Random Forest,0.9647

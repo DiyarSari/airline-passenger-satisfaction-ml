@@ -6,7 +6,7 @@ görmek ve Turkish Airlines yorumlarını ayrıca incelemek.
 
 Tasarım:
 - Hedef: 'recommended' (yolcu havayolunu tavsiye ediyor mu?) -> memnuniyet vekili.
-- Özellikler: 5 alt puan (1-5) + Business/First kabin bayrağı.
+- Özellikler: 5 alt puan (0-5) + Business/First kabin bayrağı.
 - 'overall_rating' KULLANILMAZ: tavsiye kararıyla neredeyse aynı bilgidir
   (hedef sızıntısı / target leakage).
 - Turkish Airlines yorumları eğitimden tamamen çıkarılır; model diğer
@@ -166,7 +166,7 @@ def plot_thy_profile(prof: pd.DataFrame):
         ax.text(max(o, t) + 0.05, i, f"{t - o:+.2f}", va="center", fontsize=8)
     ax.set_yticks(idx, d.index)
     ax.set_xlim(0, 5.5)
-    ax.set_xlabel("Ortalama puan (1-5)")
+    ax.set_xlabel("Ortalama puan (0-5)")
     r = prof.loc["Tavsiye oranı"]
     ax.set_title(
         f"Skytrax: THY vs diğerleri (tavsiye: %{r['Turkish Airlines'] * 100:.0f} "

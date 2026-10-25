@@ -127,9 +127,9 @@ LITERATURE = [
     },
     {
         "study": "Zhang (2024), EMITI - SciTePress",
-        "methods": "LR, RF, AdaBoost, XGBoost + SHAP",
+        "methods": "LR, RF, AdaBoost, NB, XGBoost + SHAP",
         "best": "XGBoost",
-        "accuracy": 0.951,
+        "accuracy": 0.9514,
     },
     {
         "study": "Xue (2025), IAMPA - SciTePress",
@@ -138,7 +138,7 @@ LITERATURE = [
         "accuracy": 0.92,
     },
     {
-        "study": "Hong vd., DAAM (UMP)",
+        "study": "Hong vd. (2023), DAAM (UMP)",
         "methods": "KNN, DT, LR, RF, NB, AdaBoost",
         "best": "RF",
         "accuracy": 0.892,
